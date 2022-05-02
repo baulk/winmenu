@@ -79,4 +79,6 @@ if (Test-Path $BaulkAppxPfx) {
 }
 
 $Destination = Join-Path -Path $SourceRoot -ChildPath "build/destination"
+New-Item -ItemType Directory -Force -Path $Destination -ErrorAction Stop
 Copy-Item -Force $MyAppxName -Destination $Destination
+Get-ChildItem -Path $Destination
