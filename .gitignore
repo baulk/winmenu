@@ -1,0 +1,12 @@
+.vscode/
+.vs/
+/build/
+/build.arm64/
+/include/revision.h
+/out/
+*.pdb
+*.exe
+*.obj
+*.res
+*.out
+/debug.log
