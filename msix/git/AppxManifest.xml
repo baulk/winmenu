@@ -35,10 +35,10 @@
                 <desktop4:Extension Category="windows.fileExplorerContextMenus">
                     <desktop4:FileExplorerContextMenus>
                         <desktop5:ItemType Type="Directory">
-                            <desktop5:Verb Id="OpenBaulkDev" Clsid="C6475E81-139F-4FD9-B758-20B68BA7F60C" />
+                            <desktop5:Verb Id="OpenGitBashDev" Clsid="C6475E81-139F-4FD9-B758-20B68BA7F60C" />
                         </desktop5:ItemType>
                         <desktop5:ItemType Type="Directory\Background">
-                            <desktop5:Verb Id="OpenBaulkDev" Clsid="C6475E81-139F-4FD9-B758-20B68BA7F60C" />
+                            <desktop5:Verb Id="OpenGitBashDev" Clsid="C6475E81-139F-4FD9-B758-20B68BA7F60C" />
                         </desktop5:ItemType>
                     </desktop4:FileExplorerContextMenus>
                 </desktop4:Extension>
