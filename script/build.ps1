@@ -86,7 +86,9 @@ if ($null -eq $VisualCxxBatchFile) {
 Write-Host "call `"$VisualCxxBatchFile`" $TargetWithHost"
 
 Invoke-BatchFile -Path $VisualCxxBatchFile -Arguments $TargetWithHost
-$WD = Join-Path -Path $PWD -ChildPath "build"
+
+$Root=Split-Path -Path $PSScriptRoot
+$WD = Join-Path -Path $Root -ChildPath "build"
 try {
     New-Item -ItemType Directory -Force -Path $WD
 }
