@@ -74,7 +74,7 @@ class __declspec(uuid("C6475E81-139F-4FD9-B758-20B68BA7F60C")) OpenGitBashHere
 public:
   // IExplorerCommand
   IFACEMETHODIMP GetTitle(_In_opt_ IShellItemArray *items, _Outptr_result_nullonfailure_ PWSTR *ppszTitle) {
-    return SHStrDup(L"Git Bash Here", ppszTitle);
+    return SHStrDup(L"Open Git Bash Here", ppszTitle);
   }
   IFACEMETHODIMP GetIcon(_In_opt_ IShellItemArray *, _Outptr_result_nullonfailure_ PWSTR *ppszIcon) {
     bela::error_code ec;
