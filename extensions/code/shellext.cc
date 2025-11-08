@@ -119,7 +119,7 @@ protected:
   ComPtr<IUnknown> m_site;
 };
 
-class __declspec(uuid("BF6EE3D9-EC02-4489-AD75-ACDED99BAB44")) ExplorerCommandHandler final
+class __declspec(uuid("C8E3D6A9-4F99-4B8D-A399-61ABD8D4479E")) ExplorerCommandHandler final
     : public ExplorerCommandBase {
 public:
   const wchar_t *Title() override { return L"Open with Code"; }

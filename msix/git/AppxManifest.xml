@@ -17,7 +17,7 @@
     Version="@@VERSION@@" ProcessorArchitecture="@@ARCHITECTURE@@" />
     <Properties>
         <DisplayName>Git for Windows Extension</DisplayName>
-        <PublisherDisplayName>Force Charlie</PublisherDisplayName>
+        <PublisherDisplayName>J23</PublisherDisplayName>
         <Logo>Assets\StoreLogo.scale-400.png</Logo>
     </Properties>
     <Dependencies>
