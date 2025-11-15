@@ -42,9 +42,12 @@ jobs:
           [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
           Write-Host "Write $certificatePath success"
           Get-Item $certificatePath
-      - name: Make Appx
+      - name: Make Git Appx
         if: startsWith(github.ref, 'refs/tags/')
-        run: pwsh -NoProfile -NoLogo -ExecutionPolicy unrestricted -File "./msix/makeAppx.ps1" -Target "${{ matrix.target }}"
+        run: pwsh -NoProfile -NoLogo -ExecutionPolicy unrestricted -File "./msix/makeGitAppx.ps1" -Target "${{ matrix.target }}"
+      - name: Make Code Appx
+        if: startsWith(github.ref, 'refs/tags/')
+        run: pwsh -NoProfile -NoLogo -ExecutionPolicy unrestricted -File "./msix/makeCodeAppx.ps1" -Target "${{ matrix.target }}"
       - name: Publish Artifacts
         uses: svenstaro/upload-release-action@v2
         if: startsWith(github.ref, 'refs/tags/')
