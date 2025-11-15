@@ -13,7 +13,7 @@
   IgnorableNamespaces="uap uap2 uap3 rescap desktop desktop4 desktop5 uap10 com">
   <Identity
     Name="Baulk.CodeUnofficialExtension"
-    Publisher="CN=1EF83C45-C839-4A53-B750-CC1359C1FE94"
+    Publisher="CN=528CB894-BEFF-472F-9E38-40C6DF6362E2"
     Version="@@VERSION@@" ProcessorArchitecture="@@ARCHITECTURE@@" />
   <Properties>
     <DisplayName>Code Unofficial Extension</DisplayName>

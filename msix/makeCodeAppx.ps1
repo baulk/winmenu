@@ -77,7 +77,7 @@ MakeAppx.exe pack /d "code-appx\\" /p "$MyCodeAppxName" /nv
 
 if (Test-Path $BaulkAppxPfx) {
     Write-Host -ForegroundColor Green "Use $BaulkAppxPfx sign $MyCodeAppxName"
-    SignTool.exe sign /fd SHA256 /a /f "Key.pfx" "$MyCodeAppxName" /tr "http://timestamp.digicert.com/"
+    SignTool.exe sign /fd SHA256 /a /f "Key.pfx" "$MyCodeAppxName"
 }
 
 $Destination = Join-Path -Path $SourceRoot -ChildPath "build/destination"
